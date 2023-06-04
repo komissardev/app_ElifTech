@@ -1,0 +1,62 @@
+/* Specify box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Removing text-decoration link*/
+a{
+  text-decoration: none;
+}
+
+/* Removing margins and padding */
+*{padding: 0;margin: 0;border: 0;}
+
+/* Set the main default settings for the body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove the default styling for all ul and il that have a class attribute*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* a elements that do not have a class are reset to default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Making it easy to work with images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Specify a clear periodicity in the data flow of the article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inheriting fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Removing all animations and transitions for people who prefer not to use them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <script src="./app/getApi.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="popup">
+        <div>
+            <p class="popup-text"></p>
+            <span class="popup-del"></span>
+        </div>
+    </div>
+    <header>
+        <div class="header">
+            <nav class="header-nav">
+                <button class="burger-menu">
+                    <span></span>
+                </button>
+                <ul class="header-nav-list">
+                    <li class="header-nav-list-item">
+                        <a class="header-nav-list-item-link" href="./index.html">Shop</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a  class="header-nav-list-item-link" 
+                            href="./pages/shopping_cart.html">
+                            Shopping Cart
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <nav class="shop-nav">
+                <h1 class="shop-nav-ban">Shops:</h1>
+                <ul class="shop-nav-list">
+                </ul>
+            </nav>
+            <div class="shop-cont">
+                <div class="preloader">
+                    <i class="preloader-element"></i>
+                </div>
+                <ul class="shop-cont-list">
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="./app/function.js"></script>
+    <script src="./app/json_obj.js"></script>
+    <script src="./app/shop.js"></script>
+</body>
+</html>

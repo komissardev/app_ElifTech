@@ -1,0 +1,6 @@
+/* import fonts from https://fonts.googleapis.com*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');/*global css variable font-family and font-size for rem size in a project*/
+:root {
+    font-size: 10px;
+    --font-family-roboto:'Roboto', sans-serif;
+}

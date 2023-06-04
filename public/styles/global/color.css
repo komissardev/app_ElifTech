@@ -1,0 +1,9 @@
+/*global css variable color in a project*/
+:root {
+    --color-black:#000;
+    --color-white:#fff;
+    --color-grey:#8C8C8C;
+    --color-red:#FF0000;
+    --color-light-blue:#c3cbe0;
+    --color-green:#66e611;
+}

@@ -1,0 +1,94 @@
+.header-nav-list {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    padding-left: 10px;
+
+}
+
+.header-nav-list-item:not(:last-of-type) {
+    border-right: 3px solid var(--color-black);
+}
+
+.header-nav-list-item-link {
+    display: block;
+    font-family: var(--font-family-roboto);
+    font-weight: 500;
+    font-size: 2.1rem;
+    padding: 5px 15px;
+    color: var(--color-black);
+    transition: .3s;
+    text-decoration: underline 2px transparent;
+}
+
+.header-nav-list-item-link:hover {
+    letter-spacing: .5px;
+    text-decoration: underline 2px var(--color-red);
+    transition:letter-spacing .3s, text-decoration .8s;
+}
+
+._visible {
+    display: flex !important;
+}
+
+.burger-menu{
+    position: relative;
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin: 10px 0px 10px 10px;
+    border-radius: 10px;
+    border: 2px solid var(--color-black);
+    background-color: var(--bc-light-grey);
+}
+
+.burger-menu span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 3px;
+    transform: translate(-50%);
+    background-color: var(--color-black);
+}
+
+.burger-menu span::before{
+    position: absolute;
+    content: "";
+    top: -8px;
+    left: 0;
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-black);
+    transition: all .3s;
+}
+
+.burger-menu span::after{
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 0;
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-black);
+    transition: all .3s;
+}
+
+._active.burger-menu span::before,
+._active.burger-menu span::after {
+    top: 0;
+    transition: all .3s;
+}
+
+._active.burger-menu span::before {
+    transform: rotate(90deg);
+    transition-delay: transform .3s;
+    transition: all .3s;
+}
+
+._active.burger-menu span {
+    transform: translate(-50%) rotate(45deg);
+    transition-delay: .3s;
+    transition: transform .3s;
+}

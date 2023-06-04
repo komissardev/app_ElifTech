@@ -1,0 +1,300 @@
+.shop_cart {
+    width: 49%;
+    min-height: 79vh;
+    max-height: 79vh;
+    background: rgb(223,223,223);
+    background: linear-gradient(90deg, rgba(223,223,223,0.95) 15%, rgba(223,223,159,0.95) 75%);
+}
+
+.shop_cart-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px;
+    border: 2px solid var(--color-black);
+}
+
+.shop_cart-form-label {
+    height: 20%;
+    width: 90%;
+}
+
+.shop_cart-form-label-text {
+    margin-bottom: 20px;
+    font-family: var(--font-family-roboto);
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.shop_cart-form-input {
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    font-family: var(--font-family-roboto);
+    font-weight: 500;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    border: 2px solid var(--color-black);
+    color: var(--color-black);
+}
+
+.shop_cart-form-input:focus {
+    background-color: var(--color-light-blue);
+}
+
+._check_false {
+    color: var(--color-red);
+    border: 2px solid var(--color-red);
+}
+
+._check_true {
+    color: var(--color-green);
+    border: 2px solid var(--color-green);
+}
+
+.shop_cart-cont {
+    width: 49%;
+    max-height: 79vh;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid var(--color-black);
+    background: rgb(223,223,159);
+    background: linear-gradient(90deg, rgba(223,223,159,0.95) 15%, rgba(223,223,223,0.95) 75%);
+}
+
+.shop_cart-cont-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-right: 10px;
+    overflow: auto;
+}
+
+.shop_cart-cont-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 250px;
+    margin: 10px 0px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--color-black);
+    background-color: var(--bc-light-grey-pale);
+}
+
+.list-item-img_prod {
+    width: 53%;
+    height: 94%;
+    border-radius: 10px;
+    border: 2px solid var(--color-black);
+    background-color: var(--bc-light-grey);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./../../assets/burger-770x480.jpg");
+}
+
+.list-item-info_prod {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 43%;
+    height: 95%;
+}
+
+.info_prod-ban {
+    text-align: center;
+    margin-top: 60px;
+    font-family: var(--font-family-roboto);
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.info_prod-text {
+    font-family: var(--font-family-roboto);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.info_prod-counter {
+    display: flex;
+    width: 83%;
+    height: 50px;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--bc-light-grey);
+    border: 2px solid var(--color-black);
+}
+
+.info_prod-counter-vall {
+    font-family: var(--font-family-roboto);
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.info_prod-counter-btn {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-left: 2px solid var(--color-black);
+}
+
+.info_prod-counter-btn-up,
+.info_prod-counter-btn-down {
+    height: 50%;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: 60%;
+}
+
+.info_prod-counter-btn-up {
+    border-bottom: 2px solid var(--color-black);
+    background-image: url("./../../assets/svg/caret-top-svgrepo-com.svg");
+}
+
+.info_prod-counter-btn-up:active {
+    background-position: center 48%;
+}
+
+.info_prod-counter-btn-down {
+    background-image: url("./../../assets/svg/caret-top-svgrepo-com.svg");
+    transform: rotate(180deg);
+}
+
+.info_prod-counter-btn-down:active {
+    background-position: center 48%;
+}
+
+.shop_cart-cont-list::-webkit-scrollbar {
+    width: 20px;
+}
+
+.shop_cart-cont-list::-webkit-scrollbar-track {
+    width: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: var(--bc-light-grey);
+}
+
+.shop_cart-cont-list::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--bc-dark-grey);
+}
+
+
+.shop_cart-total_cont {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 99%;
+    height: 70px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgba(223,223,159,0.95);
+}
+
+.shop_cart-total_btn {
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    margin-right: 30px;
+    font-family: var(--font-family-roboto);
+    font-weight: 500;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid var(--color-black);
+    background-color: var(--bc-light-grey);
+}
+
+.total_cont-text {
+    font-family: var(--font-family-roboto);
+    font-weight: 500;
+    font-size: 2rem;
+    margin-right: 80px;
+}
+
+.shop_cart-total_btn:active {
+    color: var(--color-white);
+    background-color: var(--bc-light-grey-pale);
+}
+
+._not_order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    font-family: var(--font-family-roboto);
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.popup{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(128, 128, 128, 0.562);
+}
+
+.popup div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 20px;
+    font-family: var(--font-family-roboto);
+    font-weight: 500;
+    font-size: 2rem;
+    width: 60%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: var(--bc-white);
+}
+
+.popup-del{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: var(--color-light-blue);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+    background-image: url("./../../assets/svg/clear-svgrepo-com.svg");
+}
+
+._dell_element{
+    cursor: pointer;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./../../assets/svg/clear-svgrepo-com.svg");
+}

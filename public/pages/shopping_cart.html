@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="./../app/getApi.js"></script>
+    <link rel="stylesheet" href="./../styles/style.css">
+</head>
+<body>
+    <div class="popup">
+        <div>
+            <p class="popup-text"></p>
+            <span class="popup-del"></span>
+        </div>
+    </div>
+    <header>
+        <div class="header">
+            <nav>
+                <button class="burger-menu">
+                    <span></span>
+                </button>
+                <ul class="header-nav-list">
+                    <li class="header-nav-list-item">
+                        <a class="header-nav-list-item-link" href="./../index.html">Shop</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a  class="header-nav-list-item-link" 
+                            href="./shopping_cart.html">
+                            Shopping Cart
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="shop_cart">
+                <form class="shop_cart-form">
+                    <label class="shop_cart-form-label" for="userName">
+                        <p class="shop_cart-form-label-text">Name:</p>
+                        <input class="shop_cart-form-input" id="userName" type="text" placeholder="Input" minlength="3" maxlength="20">
+                    </label>
+                    <label class="shop_cart-form-label" for="userEmail">
+                        <p class="shop_cart-form-label-text">Email:</p>
+                        <input class="shop_cart-form-input" id="userEmail" type="email" placeholder="Input" minlength="5">
+                    </label>
+                    <label class="shop_cart-form-label" for="userTel">
+                        <p class="shop_cart-form-label-text">Phone:</p>
+                        <input class="shop_cart-form-input" id="userTel" type="tel" placeholder="Input" minlength="10" maxlength="10" onblur="validateInput(this)">
+                    </label>
+                    <label class="shop_cart-form-label" for="userAddres">
+                        <p class="shop_cart-form-label-text">Address:</p>
+                        <input class="shop_cart-form-input" id="userAddres" type="text" placeholder="Input" minlength="10"  maxlength="30">
+                    </label>
+                </form>
+            </div>
+            <div class="shop_cart-cont">
+                <ul class="shop_cart-cont-list">
+                </ul>
+            </div>
+            <div class="shop_cart-total_cont">
+                <p class="total_cont-text">Total price: <span class="total_cont-text-vall"></span></span></p>
+                <button class="shop_cart-total_btn" type="button">Submit</button>
+            </div>
+        </div>
+    </main>
+    <script src="./../app/function.js"></script>
+    <script src="./../app/json_obj.js"></script>
+    <script src="./../app/shopping_cart.js"></script>
+</body>
+</html>

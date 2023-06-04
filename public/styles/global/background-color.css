@@ -1,0 +1,7 @@
+/*global css variable background-color in a project*/
+:root {
+    --bc-white:#fff;
+    --bc-light-grey:#e2e2e2;
+    --bc-light-grey-pale:#afaeae;
+    --bc-dark-grey:#4F4F4F;
+}

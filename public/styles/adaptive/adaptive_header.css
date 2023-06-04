@@ -1,0 +1,32 @@
+@media screen and (max-width: 600px) {
+    .header-nav-list{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        top: -5%;
+        width: 100%;
+        height: 110%;
+        padding: 0;
+        z-index: 1;
+        background-color: var(--bc-light-grey);
+    }
+    .header-nav-list-item {
+        width: 50%;
+        text-align: center;
+    }
+
+    .header-nav-list-item:first-of-type{
+        margin-top: 200px;
+    }
+
+    .header-nav-list-item:not(:last-of-type) {
+        border-right: unset;
+        border-bottom: 3px solid var(--color-black);
+    }
+
+    .burger-menu {
+        z-index: 2;
+        display: flex;
+    }
+}

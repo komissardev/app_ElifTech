@@ -1,0 +1,16 @@
+body {
+    position: relative;
+    background-color: rgba(223,223,159,1);
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 60px);
+    padding: 10px;
+    background-image: url("./../../assets/delicious-fast-food-menu-frame_18591-70266.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

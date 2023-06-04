@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+    body .main {
+        flex-direction: column;
+        align-items: unset;
+        justify-content: unset;
+    }
+
+    .main{
+        background-image: url("./../../assets/Image1.png");
+    }
+}

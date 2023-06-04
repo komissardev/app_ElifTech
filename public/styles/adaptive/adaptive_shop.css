@@ -1,0 +1,44 @@
+@media screen and (max-width: 600px) {
+    .shop-nav {
+        min-width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+        max-height: 40vh;
+    }
+
+    .shop-nav-list{
+        min-height: 30vh;
+        max-height: 30vh;
+    }
+
+    .shop-cont {
+        min-width: 100%;
+        max-width: 100%;
+        height: 500px;
+    }
+
+    .shop-cont-list-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 86%;
+        height: auto;
+    }
+
+    .shop-cont-list-item-img{
+        width: 90%;
+        height: 200px;
+        margin: 10px auto 20px;
+    }
+
+    .shop-cont-list-item-ban{
+        text-align: center;
+        margin: 0;
+    }
+
+    .shop-cont-list-item-btn{
+        margin-left: 0;
+        padding: 5px 40px;
+        margin: 20px 0px 20px;
+    }
+}

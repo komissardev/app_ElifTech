@@ -1,0 +1,19 @@
+/*Global style start*/
+@import url("./global/reset-smart-defaults.css");
+@import url("./global/fonts.css");
+@import url("./global/color.css");
+@import url("./global/background-color.css");
+@import url("./global/body.css");
+@import url("./global/header.css");
+/*Global style start*/
+/*Pages style start*/
+@import url("./pages/shop-main.css");
+@import url("./pages/shopping-cart-main.css");
+/*Pages style start*/
+
+/*Adaptive style start*/
+@import url("./adaptive/adaptive_body.css");
+@import url("./adaptive/adaptive_header.css");
+@import url("./adaptive/adaptive_shop.css");
+@import url("./adaptive/adaptive_shopping-cart.css");
+/*Adaptive style end*/
